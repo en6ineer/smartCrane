@@ -1,0 +1,524 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Интерфейс веб-страницы</title>
+<style>
+  body {
+    margin: 0;
+    height: 100vh;
+    background-color: #b0e0e6; /* Цвет фона, соответствующий изображению */
+    display: flex;
+    flex-direction: column;
+  }
+  header {
+    width: 100%;
+    height: 50px; /* Высота строки состояния */
+    background-color: #87ceeb; /* Цвет строки состояния */
+    display: flex;
+    align-items: center;
+    padding-left: 20px; /* Отступ слева */
+  }
+  .menu {
+    position: fixed;
+    right: 0;
+    top: 50px; /* Начинается сразу после header */
+    width: 200px; /* Ширина меню */
+    height: calc(100% - 50px); /* Высота меню */
+    background-color: #f0f8ff; /* Цвет меню */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px; /* Отступ сверху в меню */
+  }
+  .menu button {
+    margin-bottom: 10px; /* Отступ между кнопками */
+    padding: 10px 20px; /* Паддинг для кнопок */
+    background-color: #87ceeb; /* Цвет кнопок */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .menu button:hover {
+    background-color: #6495ed; /* Цвет кнопок при наведении */
+  }
+  
+  /* Место для дополнительного контента (круги) */
+  .content {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(58, 20px); /* 58 кругов в ряду */
+    gap: 2px;
+  }
+  .circle {
+    width: 30px; /* Размер круга */
+    height: 30px; /* Размер круга */
+    border-radius: 50%;
+    background-color: #fff; /* цвет круга */
+    border: 1px solid #000; /* граница круга */
+  }
+  /* Добавление интерактивности при наведении */
+  .circle:hover {
+    background-color: #ffa500; /* цвет при наведении */
+  }
+</style>
+</head>
+<body>
+
+<header>
+  Строка состояния
+</header>
+
+<!-- Меню справа -->
+<div class="menu">
+  <button>Кнопка 1</button>
+  <button>Кнопка 2</button>
+</div>
+
+<!-- Основной контент страницы -->
+<div class="content">
+  <!-- Здесь будет ваш код с кругами -->
+  <!-- Место для кода с кругами: начало -->
+  <div class="grid-container">
+  <div id="circle-1" class="circle"></div>
+  <div id="circle-2" class="circle"></div>
+  <div id="circle-3" class="circle"></div>
+  <div id="circle-4" class="circle"></div>
+  <div id="circle-5" class="circle"></div>
+  <div id="circle-6" class="circle"></div>
+  <div id="circle-7" class="circle"></div>
+  <div id="circle-8" class="circle"></div>
+  <div id="circle-9" class="circle"></div>
+  <div id="circle-10" class="circle"></div>
+  <div id="circle-11" class="circle"></div>
+  <div id="circle-12" class="circle"></div>
+  <div id="circle-13" class="circle"></div>
+  <div id="circle-14" class="circle"></div>
+  <div id="circle-15" class="circle"></div>
+  <div id="circle-16" class="circle"></div>
+  <div id="circle-17" class="circle"></div>
+  <div id="circle-18" class="circle"></div>
+  <div id="circle-19" class="circle"></div>
+  <div id="circle-20" class="circle"></div>
+  <div id="circle-21" class="circle"></div>
+  <div id="circle-22" class="circle"></div>
+  <div id="circle-23" class="circle"></div>
+  <div id="circle-24" class="circle"></div>
+  <div id="circle-25" class="circle"></div>
+  <div id="circle-26" class="circle"></div>
+  <div id="circle-27" class="circle"></div>
+  <div id="circle-28" class="circle"></div>
+  <div id="circle-29" class="circle"></div>
+  <div id="circle-30" class="circle"></div>
+  <div id="circle-31" class="circle"></div>
+  <div id="circle-32" class="circle"></div>
+  <div id="circle-33" class="circle"></div>
+  <div id="circle-34" class="circle"></div>
+  <div id="circle-35" class="circle"></div>
+  <div id="circle-36" class="circle"></div>
+  <div id="circle-37" class="circle"></div>
+  <div id="circle-38" class="circle"></div>
+  <div id="circle-39" class="circle"></div>
+  <div id="circle-40" class="circle"></div>
+  <div id="circle-41" class="circle"></div>
+  <div id="circle-42" class="circle"></div>
+  <div id="circle-43" class="circle"></div>
+  <div id="circle-44" class="circle"></div>
+  <div id="circle-45" class="circle"></div>
+  <div id="circle-46" class="circle"></div>
+  <div id="circle-47" class="circle"></div>
+  <div id="circle-48" class="circle"></div>
+  <div id="circle-49" class="circle"></div>
+  <div id="circle-50" class="circle"></div>
+  <div id="circle-51" class="circle"></div>
+  <div id="circle-52" class="circle"></div>
+  <div id="circle-53" class="circle"></div>
+  <div id="circle-54" class="circle"></div>
+  <div id="circle-55" class="circle"></div>
+  <div id="circle-56" class="circle"></div>
+  <div id="circle-57" class="circle"></div>
+  <div id="circle-58" class="circle"></div>
+  <div id="circle-59" class="circle"></div>
+  <div id="circle-60" class="circle"></div>
+  <div id="circle-61" class="circle"></div>
+  <div id="circle-62" class="circle"></div>
+  <div id="circle-63" class="circle"></div>
+  <div id="circle-64" class="circle"></div>
+  <div id="circle-65" class="circle"></div>
+  <div id="circle-66" class="circle"></div>
+  <div id="circle-67" class="circle"></div>
+  <div id="circle-68" class="circle"></div>
+  <div id="circle-69" class="circle"></div>
+  <div id="circle-70" class="circle"></div>
+  <div id="circle-71" class="circle"></div>
+  <div id="circle-72" class="circle"></div>
+  <div id="circle-73" class="circle"></div>
+  <div id="circle-74" class="circle"></div>
+  <div id="circle-75" class="circle"></div>
+  <div id="circle-76" class="circle"></div>
+  <div id="circle-77" class="circle"></div>
+  <div id="circle-78" class="circle"></div>
+  <div id="circle-79" class="circle"></div>
+  <div id="circle-80" class="circle"></div>
+  <div id="circle-81" class="circle"></div>
+  <div id="circle-82" class="circle"></div>
+  <div id="circle-83" class="circle"></div>
+  <div id="circle-84" class="circle"></div>
+  <div id="circle-85" class="circle"></div>
+  <div id="circle-86" class="circle"></div>
+  <div id="circle-87" class="circle"></div>
+  <div id="circle-88" class="circle"></div>
+  <div id="circle-89" class="circle"></div>
+  <div id="circle-90" class="circle"></div>
+  <div id="circle-91" class="circle"></div>
+  <div id="circle-92" class="circle"></div>
+  <div id="circle-93" class="circle"></div>
+  <div id="circle-94" class="circle"></div>
+  <div id="circle-95" class="circle"></div>
+  <div id="circle-96" class="circle"></div>
+  <div id="circle-97" class="circle"></div>
+  <div id="circle-98" class="circle"></div>
+  <div id="circle-99" class="circle"></div>
+  <div id="circle-100" class="circle"></div>
+  <div id="circle-101" class="circle"></div>
+  <div id="circle-102" class="circle"></div>
+  <div id="circle-103" class="circle"></div>
+  <div id="circle-104" class="circle"></div>
+  <div id="circle-105" class="circle"></div>
+  <div id="circle-106" class="circle"></div>
+  <div id="circle-107" class="circle"></div>
+  <div id="circle-108" class="circle"></div>
+  <div id="circle-109" class="circle"></div>
+  <div id="circle-110" class="circle"></div>
+  <div id="circle-111" class="circle"></div>
+  <div id="circle-112" class="circle"></div>
+  <div id="circle-113" class="circle"></div>
+  <div id="circle-114" class="circle"></div>
+  <div id="circle-115" class="circle"></div>
+  <div id="circle-116" class="circle"></div>
+  <div id="circle-117" class="circle"></div>
+  <div id="circle-118" class="circle"></div>
+  <div id="circle-119" class="circle"></div>
+  <div id="circle-120" class="circle"></div>
+  <div id="circle-121" class="circle"></div>
+  <div id="circle-122" class="circle"></div>
+  <div id="circle-123" class="circle"></div>
+  <div id="circle-124" class="circle"></div>
+  <div id="circle-125" class="circle"></div>
+  <div id="circle-126" class="circle"></div>
+  <div id="circle-127" class="circle"></div>
+  <div id="circle-128" class="circle"></div>
+  <div id="circle-129" class="circle"></div>
+  <div id="circle-130" class="circle"></div>
+  <div id="circle-131" class="circle"></div>
+  <div id="circle-132" class="circle"></div>
+  <div id="circle-133" class="circle"></div>
+  <div id="circle-134" class="circle"></div>
+  <div id="circle-135" class="circle"></div>
+  <div id="circle-136" class="circle"></div>
+  <div id="circle-137" class="circle"></div>
+  <div id="circle-138" class="circle"></div>
+  <div id="circle-139" class="circle"></div>
+  <div id="circle-140" class="circle"></div>
+  <div id="circle-141" class="circle"></div>
+  <div id="circle-142" class="circle"></div>
+  <div id="circle-143" class="circle"></div>
+  <div id="circle-144" class="circle"></div>
+  <div id="circle-145" class="circle"></div>
+  <div id="circle-146" class="circle"></div>
+  <div id="circle-147" class="circle"></div>
+  <div id="circle-148" class="circle"></div>
+  <div id="circle-149" class="circle"></div>
+  <div id="circle-150" class="circle"></div>
+  <div id="circle-151" class="circle"></div>
+  <div id="circle-152" class="circle"></div>
+  <div id="circle-153" class="circle"></div>
+  <div id="circle-154" class="circle"></div>
+  <div id="circle-155" class="circle"></div>
+  <div id="circle-156" class="circle"></div>
+  <div id="circle-157" class="circle"></div>
+  <div id="circle-158" class="circle"></div>
+  <div id="circle-159" class="circle"></div>
+  <div id="circle-160" class="circle"></div>
+  <div id="circle-161" class="circle"></div>
+  <div id="circle-162" class="circle"></div>
+  <div id="circle-163" class="circle"></div>
+  <div id="circle-164" class="circle"></div>
+  <div id="circle-165" class="circle"></div>
+  <div id="circle-166" class="circle"></div>
+  <div id="circle-167" class="circle"></div>
+  <div id="circle-168" class="circle"></div>
+  <div id="circle-169" class="circle"></div>
+  <div id="circle-170" class="circle"></div>
+  <div id="circle-171" class="circle"></div>
+  <div id="circle-172" class="circle"></div>
+  <div id="circle-173" class="circle"></div>
+  <div id="circle-174" class="circle"></div>
+  <div id="circle-175" class="circle"></div>
+  <div id="circle-176" class="circle"></div>
+  <div id="circle-177" class="circle"></div>
+  <div id="circle-178" class="circle"></div>
+  <div id="circle-179" class="circle"></div>
+  <div id="circle-180" class="circle"></div>
+  <div id="circle-181" class="circle"></div>
+  <div id="circle-182" class="circle"></div>
+  <div id="circle-183" class="circle"></div>
+  <div id="circle-184" class="circle"></div>
+  <div id="circle-185" class="circle"></div>
+  <div id="circle-186" class="circle"></div>
+  <div id="circle-187" class="circle"></div>
+  <div id="circle-188" class="circle"></div>
+  <div id="circle-189" class="circle"></div>
+  <div id="circle-190" class="circle"></div>
+  <div id="circle-191" class="circle"></div>
+  <div id="circle-192" class="circle"></div>
+  <div id="circle-193" class="circle"></div>
+  <div id="circle-194" class="circle"></div>
+  <div id="circle-195" class="circle"></div>
+  <div id="circle-196" class="circle"></div>
+  <div id="circle-197" class="circle"></div>
+  <div id="circle-198" class="circle"></div>
+  <div id="circle-199" class="circle"></div>
+  <div id="circle-200" class="circle"></div>
+  <div id="circle-201" class="circle"></div>
+  <div id="circle-202" class="circle"></div>
+  <div id="circle-203" class="circle"></div>
+  <div id="circle-204" class="circle"></div>
+  <div id="circle-205" class="circle"></div>
+  <div id="circle-206" class="circle"></div>
+  <div id="circle-207" class="circle"></div>
+  <div id="circle-208" class="circle"></div>
+  <div id="circle-209" class="circle"></div>
+  <div id="circle-210" class="circle"></div>
+  <div id="circle-211" class="circle"></div>
+  <div id="circle-212" class="circle"></div>
+  <div id="circle-213" class="circle"></div>
+  <div id="circle-214" class="circle"></div>
+  <div id="circle-215" class="circle"></div>
+  <div id="circle-216" class="circle"></div>
+  <div id="circle-217" class="circle"></div>
+  <div id="circle-218" class="circle"></div>
+  <div id="circle-219" class="circle"></div>
+  <div id="circle-220" class="circle"></div>
+  <div id="circle-221" class="circle"></div>
+  <div id="circle-222" class="circle"></div>
+  <div id="circle-223" class="circle"></div>
+  <div id="circle-224" class="circle"></div>
+  <div id="circle-225" class="circle"></div>
+  <div id="circle-226" class="circle"></div>
+  <div id="circle-227" class="circle"></div>
+  <div id="circle-228" class="circle"></div>
+  <div id="circle-229" class="circle"></div>
+  <div id="circle-230" class="circle"></div>
+  <div id="circle-231" class="circle"></div>
+  <div id="circle-232" class="circle"></div>
+  <div id="circle-233" class="circle"></div>
+  <div id="circle-234" class="circle"></div>
+  <div id="circle-235" class="circle"></div>
+  <div id="circle-236" class="circle"></div>
+  <div id="circle-237" class="circle"></div>
+  <div id="circle-238" class="circle"></div>
+  <div id="circle-239" class="circle"></div>
+  <div id="circle-240" class="circle"></div>
+  <div id="circle-241" class="circle"></div>
+  <div id="circle-242" class="circle"></div>
+  <div id="circle-243" class="circle"></div>
+  <div id="circle-244" class="circle"></div>
+  <div id="circle-245" class="circle"></div>
+  <div id="circle-246" class="circle"></div>
+  <div id="circle-247" class="circle"></div>
+  <div id="circle-248" class="circle"></div>
+  <div id="circle-249" class="circle"></div>
+  <div id="circle-250" class="circle"></div>
+  <div id="circle-251" class="circle"></div>
+  <div id="circle-252" class="circle"></div>
+  <div id="circle-253" class="circle"></div>
+  <div id="circle-254" class="circle"></div>
+  <div id="circle-255" class="circle"></div>
+  <div id="circle-256" class="circle"></div>
+  <div id="circle-257" class="circle"></div>
+  <div id="circle-258" class="circle"></div>
+  <div id="circle-259" class="circle"></div>
+  <div id="circle-260" class="circle"></div>
+  <div id="circle-261" class="circle"></div>
+  <div id="circle-262" class="circle"></div>
+  <div id="circle-263" class="circle"></div>
+  <div id="circle-264" class="circle"></div>
+  <div id="circle-265" class="circle"></div>
+  <div id="circle-266" class="circle"></div>
+  <div id="circle-267" class="circle"></div>
+  <div id="circle-268" class="circle"></div>
+  <div id="circle-269" class="circle"></div>
+  <div id="circle-270" class="circle"></div>
+  <div id="circle-271" class="circle"></div>
+  <div id="circle-272" class="circle"></div>
+  <div id="circle-273" class="circle"></div>
+  <div id="circle-274" class="circle"></div>
+  <div id="circle-275" class="circle"></div>
+  <div id="circle-276" class="circle"></div>
+  <div id="circle-277" class="circle"></div>
+  <div id="circle-278" class="circle"></div>
+  <div id="circle-279" class="circle"></div>
+  <div id="circle-280" class="circle"></div>
+  <div id="circle-281" class="circle"></div>
+  <div id="circle-282" class="circle"></div>
+  <div id="circle-283" class="circle"></div>
+  <div id="circle-284" class="circle"></div>
+  <div id="circle-285" class="circle"></div>
+  <div id="circle-286" class="circle"></div>
+  <div id="circle-287" class="circle"></div>
+  <div id="circle-288" class="circle"></div>
+  <div id="circle-289" class="circle"></div>
+  <div id="circle-290" class="circle"></div>
+  <div id="circle-291" class="circle"></div>
+  <div id="circle-292" class="circle"></div>
+  <div id="circle-293" class="circle"></div>
+  <div id="circle-294" class="circle"></div>
+  <div id="circle-295" class="circle"></div>
+  <div id="circle-296" class="circle"></div>
+  <div id="circle-297" class="circle"></div>
+  <div id="circle-298" class="circle"></div>
+  <div id="circle-299" class="circle"></div>
+  <div id="circle-300" class="circle"></div>
+  <div id="circle-301" class="circle"></div>
+  <div id="circle-302" class="circle"></div>
+  <div id="circle-303" class="circle"></div>
+  <div id="circle-304" class="circle"></div>
+  <div id="circle-305" class="circle"></div>
+  <div id="circle-306" class="circle"></div>
+  <div id="circle-307" class="circle"></div>
+  <div id="circle-308" class="circle"></div>
+  <div id="circle-309" class="circle"></div>
+  <div id="circle-310" class="circle"></div>
+  <div id="circle-311" class="circle"></div>
+  <div id="circle-312" class="circle"></div>
+  <div id="circle-313" class="circle"></div>
+  <div id="circle-314" class="circle"></div>
+  <div id="circle-315" class="circle"></div>
+  <div id="circle-316" class="circle"></div>
+  <div id="circle-317" class="circle"></div>
+  <div id="circle-318" class="circle"></div>
+  <div id="circle-319" class="circle"></div>
+  <div id="circle-320" class="circle"></div>
+  <div id="circle-321" class="circle"></div>
+  <div id="circle-322" class="circle"></div>
+  <div id="circle-323" class="circle"></div>
+  <div id="circle-324" class="circle"></div>
+  <div id="circle-325" class="circle"></div>
+  <div id="circle-326" class="circle"></div>
+  <div id="circle-327" class="circle"></div>
+  <div id="circle-328" class="circle"></div>
+  <div id="circle-329" class="circle"></div>
+  <div id="circle-330" class="circle"></div>
+  <div id="circle-331" class="circle"></div>
+  <div id="circle-332" class="circle"></div>
+  <div id="circle-333" class="circle"></div>
+  <div id="circle-334" class="circle"></div>
+  <div id="circle-335" class="circle"></div>
+  <div id="circle-336" class="circle"></div>
+  <div id="circle-337" class="circle"></div>
+  <div id="circle-338" class="circle"></div>
+  <div id="circle-339" class="circle"></div>
+  <div id="circle-340" class="circle"></div>
+  <div id="circle-341" class="circle"></div>
+  <div id="circle-342" class="circle"></div>
+  <div id="circle-343" class="circle"></div>
+  <div id="circle-344" class="circle"></div>
+  <div id="circle-345" class="circle"></div>
+  <div id="circle-346" class="circle"></div>
+  <div id="circle-347" class="circle"></div>
+  <div id="circle-348" class="circle"></div>
+  <div id="circle-349" class="circle"></div>
+  <div id="circle-350" class="circle"></div>
+  <div id="circle-351" class="circle"></div>
+  <div id="circle-352" class="circle"></div>
+  <div id="circle-353" class="circle"></div>
+  <div id="circle-354" class="circle"></div>
+  <div id="circle-355" class="circle"></div>
+  <div id="circle-356" class="circle"></div>
+  <div id="circle-357" class="circle"></div>
+  <div id="circle-358" class="circle"></div>
+  <div id="circle-359" class="circle"></div>
+  <div id="circle-360" class="circle"></div>
+  <div id="circle-361" class="circle"></div>
+  <div id="circle-362" class="circle"></div>
+  <div id="circle-363" class="circle"></div>
+  <div id="circle-364" class="circle"></div>
+  <div id="circle-365" class="circle"></div>
+  <div id="circle-366" class="circle"></div>
+  <div id="circle-367" class="circle"></div>
+  <div id="circle-368" class="circle"></div>
+  <div id="circle-369" class="circle"></div>
+  <div id="circle-370" class="circle"></div>
+  <div id="circle-371" class="circle"></div>
+  <div id="circle-372" class="circle"></div>
+  <div id="circle-373" class="circle"></div>
+  <div id="circle-374" class="circle"></div>
+  <div id="circle-375" class="circle"></div>
+  <div id="circle-376" class="circle"></div>
+  <div id="circle-377" class="circle"></div>
+  <div id="circle-378" class="circle"></div>
+  <div id="circle-379" class="circle"></div>
+  <div id="circle-380" class="circle"></div>
+  <div id="circle-381" class="circle"></div>
+  <div id="circle-382" class="circle"></div>
+  <div id="circle-383" class="circle"></div>
+  <div id="circle-384" class="circle"></div>
+  <div id="circle-385" class="circle"></div>
+  <div id="circle-386" class="circle"></div>
+  <div id="circle-387" class="circle"></div>
+  <div id="circle-388" class="circle"></div>
+  <div id="circle-389" class="circle"></div>
+  <div id="circle-390" class="circle"></div>
+  <div id="circle-391" class="circle"></div>
+  <div id="circle-392" class="circle"></div>
+  <div id="circle-393" class="circle"></div>
+  <div id="circle-394" class="circle"></div>
+  <div id="circle-395" class="circle"></div>
+  <div id="circle-396" class="circle"></div>
+  <div id="circle-397" class="circle"></div>
+  <div id="circle-398" class="circle"></div>
+  <div id="circle-399" class="circle"></div>
+  <div id="circle-400" class="circle"></div>
+  <div id="circle-401" class="circle"></div>
+  <div id="circle-402" class="circle"></div>
+  <div id="circle-403" class="circle"></div>
+  <div id="circle-404" class="circle"></div>
+  <div id="circle-405" class="circle"></div>
+  <div id="circle-406" class="circle"></div>
+  <div id="circle-407" class="circle"></div>
+  <div id="circle-408" class="circle"></div>
+  <div id="circle-409" class="circle"></div>
+  <div id="circle-410" class="circle"></div>
+  <div id="circle-411" class="circle"></div>
+  <div id="circle-412" class="circle"></div>
+  <div id="circle-413" class="circle"></div>
+  <div id="circle-414" class="circle"></div>
+  <div id="circle-415" class="circle"></div>
+  <div id="circle-416" class="circle"></div>
+  <div id="circle-417" class="circle"></div>
+  <div id="circle-418" class="circle"></div>
+  <div id="circle-419" class="circle"></div>
+  <div id="circle-420" class="circle"></div>
+  <div id="circle-421" class="circle"></div>
+  <div id="circle-422" class="circle"></div>
+  <div id="circle-423" class="circle"></div>
+  <div id="circle-424" class="circle"></div>
+  <div id="circle-425" class="circle"></div>
+  <div id="circle-426" class="circle"></div>
+  <div id="circle-427" class="circle"></div>
+  <div id="circle-428" class="circle"></div>
+  <div id="circle-429" class="circle"></div>
+</div>
+  <!-- Место для кода с кругами: конец -->
+</div>
+
+</body>
+</html>
