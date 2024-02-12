@@ -1,0 +1,78 @@
+body {
+    margin: 0;
+    height: 100vh;
+    background-color: #6fbbc5; /* Цвет фона, соответствующий изображению */
+    display: flex;
+    flex-direction: column;
+  }
+  header {
+    width: 100%;
+    height: 50px; /* Высота строки состояния */
+    background-color: #87ceeb; /* Цвет строки состояния */
+    position: fixed; /* забабахал чтобы не двигалась влево-право */
+    display: flex;
+    align-items: center;
+    padding-left: 20px; /* Отступ слева */
+  }
+  .menu {
+    position: fixed;
+    right: 0;
+    top: 50px; /* Начинается сразу после header */
+    width: 200px; /* Ширина меню */
+    height: calc(100% - 50px); /* Высота меню */
+    background-color: #d1e8fc; /* Цвет меню */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px; /* Отступ сверху в меню */
+  }
+  .menu button {
+    margin-bottom: 10px; /* Отступ между кнопками */
+    padding: 10px 20px; /* Паддинг для кнопок */
+    background-color: #87ceeb; /* Цвет кнопок */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .menu button:hover {
+    background-color: #6495ed; /* Цвет кнопок при наведении */
+  }
+  
+  /* Место для дополнительного контента (круги) */
+  .content {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+  }
+  .grid-container {
+    margin: 3px; /* По идеи надо создать второй класс для другого контейнера из 6 рядов, и уже там выставить отступ. */
+    display: grid;
+    grid-template-columns: repeat(27, 30px); /* 58 кругов в ряду !- СТОПЭ, надо переделать, это понятно что 58 в ряду. Все равно не правильно. */
+    grid-template-rows: repeat(9, 30px);
+    gap: 5px;
+    outline: 2px solid #000; /* Чёрная рамка */
+    /*border: 3px solid #fff;*/
+  }
+  .grid-container2 {
+    position: relative;
+    top: 0px;
+    margin: 3px; /* По идеи надо создать второй класс для другого контейнера из 6 рядов, и уже там выставить отступ. */
+    display: grid;
+    grid-template-columns: repeat(31, 30px); /* 58 кругов в ряду !- СТОПЭ, надо переделать, это понятно что 58 в ряду. Все равно не правильно. */
+    grid-template-rows: repeat(6, 30px);
+    gap: 5px;
+    outline: 2px solid #000; /* Чёрная рамка */
+    /*border: 3px solid #fff;*/
+  }
+  .circle {
+    width: 30px; /* Размер круга */
+    height: 30px; /* Размер круга */
+    border-radius: 50%;
+    background-color: #fff; /* цвет круга */
+    border: 1px solid #000; /* граница круга */
+  }
+  /* Добавление интерактивности при наведении */
+  .circle:hover {
+    background-color: #00ff2a; /* цвет при наведении */
+  }

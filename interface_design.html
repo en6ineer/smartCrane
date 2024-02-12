@@ -5,73 +5,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Интерфейс веб-страницы</title>
-<style>
-  body {
-    margin: 0;
-    height: 100vh;
-    background-color: #6fbbc5; /* Цвет фона, соответствующий изображению */
-    display: flex;
-    flex-direction: column;
-  }
-  header {
-    width: 100%;
-    height: 50px; /* Высота строки состояния */
-    background-color: #87ceeb; /* Цвет строки состояния */
-    display: flex;
-    align-items: center;
-    padding-left: 20px; /* Отступ слева */
-  }
-  .menu {
-    position: fixed;
-    right: 0;
-    top: 50px; /* Начинается сразу после header */
-    width: 200px; /* Ширина меню */
-    height: calc(100% - 50px); /* Высота меню */
-    background-color: #d1e8fc; /* Цвет меню */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 20px; /* Отступ сверху в меню */
-  }
-  .menu button {
-    margin-bottom: 10px; /* Отступ между кнопками */
-    padding: 10px 20px; /* Паддинг для кнопок */
-    background-color: #87ceeb; /* Цвет кнопок */
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  .menu button:hover {
-    background-color: #6495ed; /* Цвет кнопок при наведении */
-  }
-  
-  /* Место для дополнительного контента (круги) */
-  .content {
-    flex-grow: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-   
-  }
-  .grid-container {
-    display: grid;
-    grid-template-columns: repeat(58, 30px); /* 58 кругов в ряду */
-    gap: 4px;
-    outline: 2px solid #000; /* Чёрная рамка */
-    /*border: 3px solid #fff;*/
-  }
-  .circle {
-    width: 30px; /* Размер круга */
-    height: 30px; /* Размер круга */
-    border-radius: 50%;
-    background-color: #fff; /* цвет круга */
-    border: 1px solid #000; /* граница круга */
-  }
-  /* Добавление интерактивности при наведении */
-  .circle:hover {
-    background-color: #00ff2a; /* цвет при наведении */
-  }
-</style>
+<link rel = "stylesheet" href="style.css">
 </head>
 <body>
 
@@ -92,8 +26,13 @@
   <div class="grid-container">
   <div id="circle-1" class="circle"></div>
   </div>
+
+  <div class="grid-container2">
+  </div>
+  
   <!-- Место для кода с кругами: конец -->
 </div>
+
 <script src="app.js" defer></script>
 </body>
 </html>
